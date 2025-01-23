@@ -1,2 +1,16 @@
-# GSTennisBallSpeedData
-Tennis Serve Speed Analysis
+**PROFESSIONAL TENNIS BALL SPEED ANALYSIS Research Question**
+
+At the end of last year, beginning with the Shanghai tournament, Daniil Medvedev publicly criticized the quality of professional tennis balls used in tournaments. He described today's tennis balls as much less powerful, citing the fact that he used to be able to hit return winners from the back fence. Now, his strategy of doing so has been greatly diminished due to the reduced ball flight speed. Shortly after, Alexander Zverev supported Medvedev's comments and mentioned that he had done some research, discovering that tennis ball companies, in an effort to cut costs, have been producing the balls with different materials. This is likely a result of reduced income for tennis ball companies since COVID and the rise of pickleball as a competing racquet sport. Interestingly, Stefanos Tsitsipas stated after his first-round loss in Australia last week that the game has become faster and more powerful compared to when he started playing on tour.
+
+After Tsitsipas made this comment, I set out to find the best possible data to try to decipher who was right and who was wrong about the speed of today’s game.
+
+**Conclusion**
+
+Based on the information available to me from Jeff Sackman's tennis data repository, the answer remains unclear. While many players have shown peaks in their average serve speed around 2020, followed by subsequent drops in the following years, some players—like Novak Djokovic—haven’t experienced noticeable decreases in their serve speed over the last four years.
+
+I believe that to effectively answer this research question, a thorough experiment must be conducted in which a professional player serves in a heat- and humidity-controlled environment with various brands of old and new balls. The tour’s diversity in tournaments across the world forces players to adapt to different brands of tennis balls and climate conditions, all of which impact final ball speeds during strokes. Additionally, over the last decade, most players have transitioned to using lower string tensions on their racquets. This change is likely an adaptation to combat the changes in ball speed caused by production variations.
+
+While I aimed to answer the question definitively and believe I’ve uncovered interesting findings, I cannot provide a conclusive answer. However, I do believe that tennis balls have influenced players to adjust their equipment to achieve the desired ball speed during matches.
+
+**Python and Microsoft PowerBI Usage**
+The attached Python script and PDF charts of my Microsoft Power BI visuals demonstrate my ability to extract, manipulate, and visualize data to address a research question. To summarize, I saved all of the individual match and point datasets from the grand slam data available (US Open and Wimbledon only slams avaialable after 2018). Then I used the match_id column to merge all of the files together, I was then forced to use a gender detector on the player's first names to filter out women's matches to conduct the analysis. The final calculation I made to spice up the analysis was to calculate the number of games each ball had been played for every point using the match_id, Game Number, and Set Number column. The final data frame and table was then loaded into Microsoft PowerBI so that I could create some additional column calculations and make higher quality visuals for the sake of sharing them. 
